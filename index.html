@@ -13,9 +13,25 @@
     src="http://m701.music.126.net/20220609175723/d70ea950271ddccb3012aa89c94f2279/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/9562488478/49a9/d7f9/68d0/84f335923ca51575d7284ef6dccd8bfd.mp3">
     你的浏览器版本太低，不支持audio标签
 	</audio>
+   
+  <script type="text/javascript">
+    window.onload = function(){
+             setInterval("toggleSound()",100);
+        }
+
+    function toggleSound() {
+                var music = document.getElementById("audio");//获取ID  
+                    
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
+</script>
 
 
-    
+
+	  
 </body>
 
 </html>
